@@ -13,5 +13,17 @@ namespace SI_ManajemenInventori
 
         public int KodeKategori { get => kodeKategori; set => kodeKategori = value; }
         public string NamaKategori { get => namaKategori; set => namaKategori = value; }
+
+        public Kategori(int kodeKategori, string namaKategori)
+        {
+            KodeKategori = kodeKategori;
+            NamaKategori = namaKategori;
+        }
+
+        public static void TambahData(Kategori k)
+        {
+            string sql = "insert into kategori(nama_kategori) values('" + k.NamaKategori + "')";
+            Koneksi.JalankanPerintahDML(sql);
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace KerjaPraktek
         {
             InitializeComponent();
         }
+
+        private void buttonTambah_Click(object sender, EventArgs e)
+        {
+            FormTambahKategori tambah = new FormTambahKategori();
+            tambah.Owner = this;
+            tambah.Show();
+        }
     }
 }
