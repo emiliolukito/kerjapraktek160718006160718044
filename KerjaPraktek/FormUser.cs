@@ -16,5 +16,21 @@ namespace KerjaPraktek
         {
             InitializeComponent();
         }
+
+        private void buttonTambah_Click(object sender, EventArgs e)
+        {
+            Form form = Application.OpenForms["FormTambahUser"];
+            if(form == null)
+            {
+                FormTambahBarang formTambahBarang = new FormTambahBarang();
+                formTambahBarang.Owner = this;
+                formTambahBarang.Show();
+            }
+            else
+            {
+                form.Show();
+                form.BringToFront();
+            }
+        }
     }
 }

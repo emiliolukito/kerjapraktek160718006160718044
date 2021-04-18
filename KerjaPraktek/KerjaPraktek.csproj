@@ -92,6 +92,12 @@
     <Compile Include="FormTambahBarang.Designer.cs">
       <DependentUpon>FormTambahBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahUser.Designer.cs">
+      <DependentUpon>FormTambahUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormKategori.resx">
       <DependentUpon>FormKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahUser.resx">
+      <DependentUpon>FormTambahUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
