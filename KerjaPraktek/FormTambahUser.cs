@@ -30,7 +30,7 @@ namespace KerjaPraktek
         {
             try
             {
-                if(textBoxPassword.Text != textBoxUlangiPassword.Text)
+                if (textBoxPassword.Text != textBoxUlangiPassword.Text)
                 {
                     MessageBox.Show("Ulangi Password tidak sama dengan Password.");
                 }
@@ -53,8 +53,11 @@ namespace KerjaPraktek
             textBoxUsername.Clear();
             textBoxPassword.Clear();
             textBoxUlangiPassword.Clear();
+        }
+
         private void FormTambahUser_Load(object sender, EventArgs e)
         {
+
         }
     }
 }
