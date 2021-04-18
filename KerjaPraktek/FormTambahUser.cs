@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace KerjaPraktek
 {
-    public partial class FormUser : Form
+    public partial class FormTambahUser : Form
     {
-        public FormUser()
+        public FormTambahUser()
         {
             InitializeComponent();
         }
 
-        private void buttonTambah_Click(object sender, EventArgs e)
+        private void buttonKeluar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
