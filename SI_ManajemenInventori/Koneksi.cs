@@ -15,6 +15,13 @@ namespace SI_ManajemenInventori
         public MySqlConnection KoneksiDB { get => koneksiDB; private set => koneksiDB = value; }
 
         #region Constructor
+
+        public Koneksi()
+        {
+            KoneksiDB = new MySqlConnection();
+            KoneksiDB.ConnectionString = ConfigurationManager.ConnectionStrings["koneksiku"].ConnectionString;
+            Connect();
+        }
         public Koneksi(string server, string database, string username, string pwd)
         {
             string strCon = "server=" + server + ";port=3307;database=" + database + ";uid=" + username + ";password=" + pwd + ";charset=utf8";
@@ -45,6 +52,14 @@ namespace SI_ManajemenInventori
             myConfig.ConnectionStrings.ConnectionStrings["koneksiku"].ConnectionString = connString;
             myConfig.Save(ConfigurationSaveMode.Modified, true);
             ConfigurationManager.RefreshSection("connectionStrings");
+        }
+
+        public static void JalankanPerintahDML(string sql)
+        {
+            Koneksi k = new Koneksi();
+            k.Connect();
+            MySqlCommand c = new MySqlCommand(sql, k.KoneksiDB);
+            c.ExecuteNonQuery();
         }
         #endregion
         
