@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace SI_ManajemenInventori
 {
@@ -23,6 +24,8 @@ namespace SI_ManajemenInventori
             KoneksiDB.ConnectionString = strCon;
 
             Connect();
+
+            UpdateAppConfig(strCon);
         }
         #endregion
 
@@ -34,6 +37,14 @@ namespace SI_ManajemenInventori
                 KoneksiDB.Close();
             }
             KoneksiDB.Open();
+        }
+
+        public void UpdateAppConfig(string connString)
+        {
+            Configuration myConfig = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            myConfig.ConnectionStrings.ConnectionStrings["koneksiku"].ConnectionString = connString;
+            myConfig.Save(ConfigurationSaveMode.Modified, true);
+            ConfigurationManager.RefreshSection("connectionStrings");
         }
         #endregion
         
