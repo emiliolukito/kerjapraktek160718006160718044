@@ -48,9 +48,9 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(34, 86);
+            this.label1.Location = new System.Drawing.Point(30, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 50);
+            this.label1.Size = new System.Drawing.Size(399, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "DAFTAR USER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,9 +58,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, -68);
+            this.label2.Location = new System.Drawing.Point(13, -54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 20);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cari:";
             // 
@@ -71,61 +71,69 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(34, 157);
+            this.panel1.Location = new System.Drawing.Point(30, 126);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(449, 52);
+            this.panel1.Size = new System.Drawing.Size(399, 42);
             this.panel1.TabIndex = 2;
             // 
             // textBoxKriteria
             // 
-            this.textBoxKriteria.Location = new System.Drawing.Point(81, 14);
+            this.textBoxKriteria.Location = new System.Drawing.Point(72, 11);
+            this.textBoxKriteria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxKriteria.Name = "textBoxKriteria";
-            this.textBoxKriteria.Size = new System.Drawing.Size(337, 26);
+            this.textBoxKriteria.Size = new System.Drawing.Size(300, 22);
             this.textBoxKriteria.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 17);
+            this.label3.Location = new System.Drawing.Point(20, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 20);
+            this.label3.Size = new System.Drawing.Size(33, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Cari";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, -71);
+            this.textBox1.Location = new System.Drawing.Point(55, -57);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 26);
+            this.textBox1.Size = new System.Drawing.Size(323, 22);
             this.textBox1.TabIndex = 2;
             // 
             // dataGridViewUser
             // 
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUser.Location = new System.Drawing.Point(34, 230);
+            this.dataGridViewUser.Location = new System.Drawing.Point(30, 184);
+            this.dataGridViewUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewUser.Name = "dataGridViewUser";
+            this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 28;
-            this.dataGridViewUser.Size = new System.Drawing.Size(449, 314);
+            this.dataGridViewUser.Size = new System.Drawing.Size(399, 251);
             this.dataGridViewUser.TabIndex = 3;
             // 
             // buttonTambah
             // 
             this.buttonTambah.BackColor = System.Drawing.Color.Lime;
             this.buttonTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambah.Location = new System.Drawing.Point(34, 23);
+            this.buttonTambah.Location = new System.Drawing.Point(30, 18);
+            this.buttonTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(117, 44);
+            this.buttonTambah.Size = new System.Drawing.Size(104, 35);
             this.buttonTambah.TabIndex = 4;
             this.buttonTambah.Text = "&TAMBAH";
             this.buttonTambah.UseVisualStyleBackColor = false;
+            this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
             // 
             // buttonUbah
             // 
             this.buttonUbah.BackColor = System.Drawing.Color.Yellow;
             this.buttonUbah.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUbah.Location = new System.Drawing.Point(214, 23);
+            this.buttonUbah.Location = new System.Drawing.Point(190, 18);
+            this.buttonUbah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUbah.Name = "buttonUbah";
-            this.buttonUbah.Size = new System.Drawing.Size(107, 44);
+            this.buttonUbah.Size = new System.Drawing.Size(95, 35);
             this.buttonUbah.TabIndex = 5;
             this.buttonUbah.Text = "&UBAH";
             this.buttonUbah.UseVisualStyleBackColor = false;
@@ -135,9 +143,10 @@
             this.buttonHapus.BackColor = System.Drawing.Color.Red;
             this.buttonHapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHapus.ForeColor = System.Drawing.Color.White;
-            this.buttonHapus.Location = new System.Drawing.Point(376, 23);
+            this.buttonHapus.Location = new System.Drawing.Point(334, 18);
+            this.buttonHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonHapus.Name = "buttonHapus";
-            this.buttonHapus.Size = new System.Drawing.Size(107, 44);
+            this.buttonHapus.Size = new System.Drawing.Size(95, 35);
             this.buttonHapus.TabIndex = 6;
             this.buttonHapus.Text = "&HAPUS";
             this.buttonHapus.UseVisualStyleBackColor = false;
@@ -147,18 +156,19 @@
             this.buttonKeluar.BackColor = System.Drawing.Color.Black;
             this.buttonKeluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKeluar.ForeColor = System.Drawing.Color.White;
-            this.buttonKeluar.Location = new System.Drawing.Point(361, 567);
+            this.buttonKeluar.Location = new System.Drawing.Point(321, 454);
+            this.buttonKeluar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonKeluar.Name = "buttonKeluar";
-            this.buttonKeluar.Size = new System.Drawing.Size(122, 44);
+            this.buttonKeluar.Size = new System.Drawing.Size(108, 35);
             this.buttonKeluar.TabIndex = 7;
             this.buttonKeluar.Text = "KELUAR";
             this.buttonKeluar.UseVisualStyleBackColor = false;
             // 
             // FormUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 623);
+            this.ClientSize = new System.Drawing.Size(471, 498);
             this.Controls.Add(this.buttonKeluar);
             this.Controls.Add(this.buttonHapus);
             this.Controls.Add(this.buttonUbah);
@@ -166,8 +176,9 @@
             this.Controls.Add(this.dataGridViewUser);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormUser";
-            this.Text = "FormUser";
+            this.Text = "Form User";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
