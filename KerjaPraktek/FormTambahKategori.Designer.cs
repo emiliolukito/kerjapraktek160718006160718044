@@ -40,10 +40,10 @@
             this.buttonKeluar.BackColor = System.Drawing.Color.Black;
             this.buttonKeluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKeluar.ForeColor = System.Drawing.Color.White;
-            this.buttonKeluar.Location = new System.Drawing.Point(332, 78);
+            this.buttonKeluar.Location = new System.Drawing.Point(374, 98);
             this.buttonKeluar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonKeluar.Name = "buttonKeluar";
-            this.buttonKeluar.Size = new System.Drawing.Size(108, 35);
+            this.buttonKeluar.Size = new System.Drawing.Size(122, 44);
             this.buttonKeluar.TabIndex = 20;
             this.buttonKeluar.Text = "KELUAR";
             this.buttonKeluar.UseVisualStyleBackColor = false;
@@ -53,10 +53,10 @@
             // 
             this.buttonKosongi.BackColor = System.Drawing.Color.Yellow;
             this.buttonKosongi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKosongi.Location = new System.Drawing.Point(195, 78);
+            this.buttonKosongi.Location = new System.Drawing.Point(219, 98);
             this.buttonKosongi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonKosongi.Name = "buttonKosongi";
-            this.buttonKosongi.Size = new System.Drawing.Size(121, 35);
+            this.buttonKosongi.Size = new System.Drawing.Size(136, 44);
             this.buttonKosongi.TabIndex = 19;
             this.buttonKosongi.Text = "KOSONGI";
             this.buttonKosongi.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@
             // 
             this.buttonTambah.BackColor = System.Drawing.Color.Lime;
             this.buttonTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambah.Location = new System.Drawing.Point(72, 78);
+            this.buttonTambah.Location = new System.Drawing.Point(81, 98);
             this.buttonTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(109, 35);
+            this.buttonTambah.Size = new System.Drawing.Size(123, 44);
             this.buttonTambah.TabIndex = 18;
             this.buttonTambah.Text = "&TAMBAH";
             this.buttonTambah.UseVisualStyleBackColor = false;
@@ -78,27 +78,27 @@
             // textBoxKategori
             // 
             this.textBoxKategori.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKategori.Location = new System.Drawing.Point(195, 26);
+            this.textBoxKategori.Location = new System.Drawing.Point(219, 32);
             this.textBoxKategori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxKategori.Name = "textBoxKategori";
-            this.textBoxKategori.Size = new System.Drawing.Size(246, 32);
+            this.textBoxKategori.Size = new System.Drawing.Size(276, 36);
             this.textBoxKategori.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 29);
+            this.label1.Location = new System.Drawing.Point(42, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 24);
+            this.label1.Size = new System.Drawing.Size(171, 29);
             this.label1.TabIndex = 16;
             this.label1.Text = "Nama Kategori";
             // 
             // FormTambahKategori
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 137);
+            this.ClientSize = new System.Drawing.Size(541, 171);
             this.Controls.Add(this.buttonKeluar);
             this.Controls.Add(this.buttonKosongi);
             this.Controls.Add(this.buttonTambah);
