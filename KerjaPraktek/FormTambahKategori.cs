@@ -41,7 +41,6 @@ namespace KerjaPraktek
         private void buttonKeluar_Click(object sender, EventArgs e)
         {
             this.Close();
-            string halo = "";
         }
     }
 }
