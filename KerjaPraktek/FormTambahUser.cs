@@ -16,5 +16,10 @@ namespace KerjaPraktek
         {
             InitializeComponent();
         }
+
+        private void FormTambahUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
