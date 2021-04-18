@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using SI_ManajemenInventori;
+
 
 namespace KerjaPraktek
 {
@@ -17,6 +19,7 @@ namespace KerjaPraktek
         {
             InitializeComponent();
         }
+
 
         private void buttonKeluar_Click(object sender, EventArgs e)
         {
@@ -50,6 +53,8 @@ namespace KerjaPraktek
             textBoxUsername.Clear();
             textBoxPassword.Clear();
             textBoxUlangiPassword.Clear();
+        private void FormTambahUser_Load(object sender, EventArgs e)
+        {
         }
     }
 }
