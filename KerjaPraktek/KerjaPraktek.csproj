@@ -170,5 +170,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SI_ManajemenInventori\SI_ManajemenInventori_LIB.csproj">
+      <Project>{acf71b05-ace4-4c4d-b519-ce84f9bdd0f8}</Project>
+      <Name>SI_ManajemenInventori_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
