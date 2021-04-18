@@ -32,11 +32,11 @@ namespace KerjaPraktek
             this.buttonKeluar = new System.Windows.Forms.Button();
             this.buttonKosongi = new System.Windows.Forms.Button();
             this.buttonTambah = new System.Windows.Forms.Button();
-            this.textBoxKategori = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxUlangiPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,6 +65,7 @@ namespace KerjaPraktek
             this.buttonKosongi.TabIndex = 24;
             this.buttonKosongi.Text = "KOSONGI";
             this.buttonKosongi.UseVisualStyleBackColor = false;
+            this.buttonKosongi.Click += new System.EventHandler(this.buttonKosongi_Click);
             // 
             // buttonTambah
             // 
@@ -77,15 +78,16 @@ namespace KerjaPraktek
             this.buttonTambah.TabIndex = 23;
             this.buttonTambah.Text = "&TAMBAH";
             this.buttonTambah.UseVisualStyleBackColor = false;
+            this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
             // 
-            // textBoxKategori
+            // textBoxUsername
             // 
-            this.textBoxKategori.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKategori.Location = new System.Drawing.Point(182, 34);
-            this.textBoxKategori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxKategori.Name = "textBoxKategori";
-            this.textBoxKategori.Size = new System.Drawing.Size(246, 32);
-            this.textBoxKategori.TabIndex = 22;
+            this.textBoxUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Location = new System.Drawing.Point(182, 34);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(246, 32);
+            this.textBoxUsername.TabIndex = 22;
             // 
             // label1
             // 
@@ -97,15 +99,15 @@ namespace KerjaPraktek
             this.label1.TabIndex = 21;
             this.label1.Text = "Username:";
             // 
-            // textBox1
+            // textBoxPassword
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(182, 84);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(246, 32);
-            this.textBox1.TabIndex = 27;
+            this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(182, 84);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(246, 32);
+            this.textBoxPassword.TabIndex = 27;
             // 
             // label2
             // 
@@ -117,15 +119,15 @@ namespace KerjaPraktek
             this.label2.TabIndex = 26;
             this.label2.Text = "Password:";
             // 
-            // textBox2
+            // textBoxUlangiPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(182, 135);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(246, 32);
-            this.textBox2.TabIndex = 29;
+            this.textBoxUlangiPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUlangiPassword.Location = new System.Drawing.Point(182, 135);
+            this.textBoxUlangiPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxUlangiPassword.Name = "textBoxUlangiPassword";
+            this.textBoxUlangiPassword.PasswordChar = '*';
+            this.textBoxUlangiPassword.Size = new System.Drawing.Size(246, 32);
+            this.textBoxUlangiPassword.TabIndex = 29;
             // 
             // label3
             // 
@@ -142,14 +144,14 @@ namespace KerjaPraktek
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 251);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxUlangiPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonKeluar);
             this.Controls.Add(this.buttonKosongi);
             this.Controls.Add(this.buttonTambah);
-            this.Controls.Add(this.textBoxKategori);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.label1);
             this.Name = "FormTambahUser";
             this.Text = "Tambah User";
@@ -163,11 +165,11 @@ namespace KerjaPraktek
         private System.Windows.Forms.Button buttonKeluar;
         private System.Windows.Forms.Button buttonKosongi;
         private System.Windows.Forms.Button buttonTambah;
-        private System.Windows.Forms.TextBox textBoxKategori;
+        private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxUlangiPassword;
         private System.Windows.Forms.Label label3;
     }
 }
