@@ -90,9 +90,12 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 29);
+
+            this.label1.Size = new System.Drawing.Size(150, 24);
+
+
             this.label1.TabIndex = 16;
-            this.label1.Text = "Nama Kategori";
+            this.label1.Text = "Nama Kategori:";
             // 
             // FormTambahKategori
             // 
