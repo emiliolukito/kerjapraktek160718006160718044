@@ -19,6 +19,7 @@ namespace KerjaPraktek
 
         private void buttonTambah_Click(object sender, EventArgs e)
         {
+
             Form form = Application.OpenForms["FormTambahUser"];
             if(form == null)
             {
