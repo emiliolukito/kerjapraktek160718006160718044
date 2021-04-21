@@ -163,6 +163,7 @@
             this.buttonKeluar.TabIndex = 7;
             this.buttonKeluar.Text = "KELUAR";
             this.buttonKeluar.UseVisualStyleBackColor = false;
+            this.buttonKeluar.Click += new System.EventHandler(this.buttonKeluar_Click);
             // 
             // FormUser
             // 
