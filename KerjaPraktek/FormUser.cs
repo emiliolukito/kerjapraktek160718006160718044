@@ -23,9 +23,9 @@ namespace KerjaPraktek
             Form form = Application.OpenForms["FormTambahUser"];
             if(form == null)
             {
-                FormTambahBarang formTambahBarang = new FormTambahBarang();
-                formTambahBarang.Owner = this;
-                formTambahBarang.Show();
+                FormTambahUser formTambahUser = new FormTambahUser();
+                formTambahUser.Owner = this;
+                formTambahUser.Show();
             }
             else
             {
