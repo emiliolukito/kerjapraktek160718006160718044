@@ -54,10 +54,8 @@ namespace KerjaPraktek
             textBoxPassword.Clear();
             textBoxUlangiPassword.Clear();
         }
-
         private void FormTambahUser_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
