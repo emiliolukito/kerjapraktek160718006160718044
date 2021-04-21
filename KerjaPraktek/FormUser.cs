@@ -33,5 +33,10 @@ namespace KerjaPraktek
                 form.BringToFront();
             }
         }
+
+        private void FormUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
