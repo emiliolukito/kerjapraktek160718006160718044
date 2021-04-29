@@ -74,12 +74,6 @@
     <Compile Include="FormKategori.Designer.cs">
       <DependentUpon>FormKategori.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPindahBarang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPindahBarang.Designer.cs">
-      <DependentUpon>FormPindahBarang.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormProsesBarang.cs">
       <SubType>Form</SubType>
     </Compile>
